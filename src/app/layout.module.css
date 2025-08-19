@@ -1,0 +1,33 @@
+/* app/layout.module.css */
+.shell {
+  /* variáveis ficam locais a este módulo */
+  --left: 240px;
+  --right: 300px;
+  --border: #e5e7eb;
+  --bg: #f6f7f9;
+  --card: #fff;
+
+  height: calc(100vh - 48px - 48px); /* header + footer ~48px cada */
+  display: grid;
+  grid-template-columns: var(--left) 1fr var(--right);
+  background: var(--bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+
+.left,
+.right {
+  background: var(--card);
+  border-right: 1px solid var(--border);
+  overflow: auto;
+}
+
+.right {
+  border-right: none;
+  border-left: 1px solid var(--border);
+}
+
+.center {
+  padding: 16px;
+  overflow: hidden; /* sem rolagem global */
+}

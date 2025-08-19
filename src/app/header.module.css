@@ -1,0 +1,31 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #111827; /* preto */
+  color: white;
+  padding: 12px 20px;
+  border-bottom: 1px solid #1f2937;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.nav {
+  display: flex;
+  gap: 16px;
+}
+
+.link {
+  color: #d1d5db; /* cinza claro */
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease-in-out;
+}
+
+.link:hover {
+  color: white;
+}
